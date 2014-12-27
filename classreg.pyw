@@ -88,7 +88,7 @@ class ExamplePanel(wx.Panel):
 
 		reg = False
 
-		if 'Spring 2013 class detail' in html :
+		if 'Spring 2015 class detail' in html :
 			if not 'closed' in html :
 				reg = True
 			#else : 
@@ -122,7 +122,7 @@ class ExamplePanel(wx.Panel):
 						
 cj = cookielib.CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-dataurl = 'https://utdirect.utexas.edu/registrar/nrclav/details.WBX?s_ccyys=20132&s_unique='
+dataurl = 'https://utdirect.utexas.edu/registrar/nrclav/details.WBX?s_ccyys=20152&s_unique='
 searchurl = ''
 app = wx.App(False)
 frame = wx.Frame(None, -1, title='Open Class Sniper', pos=(50,50),size=(323,300), style=wx.DEFAULT_FRAME_STYLE ^ wx.RESIZE_BORDER )
